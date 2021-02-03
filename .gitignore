@@ -1,0 +1,9 @@
+build/
+Build/
+cmake-build-*/
+.idea/
+*.dat
+*.png
+*.npy
+*.pyc
+
