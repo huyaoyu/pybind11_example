@@ -25,10 +25,9 @@ class CMakeExtension(Extension):
 
 cmake_args = []
 
-if ( '--blender' in sys.argv ):
-    print('Build for blender')
+if ( sys.version_info[0] == 3 and sys.version_info[1] == 7 ):
+    print('Build for Python3.7')
     cmake_args.append("-DSPECIFIC_PYTHON_INCLUDE=/usr/include/python3.7m")
-    sys.argv.remove("--blender")
 
 class CMakeBuild(build_ext):
     def build_extension(self, ext):
