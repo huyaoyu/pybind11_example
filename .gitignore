@@ -6,4 +6,7 @@ cmake-build-*/
 *.png
 *.npy
 *.pyc
+InstalledFiles*.txt
+dist/
+*.egg-info/
 
